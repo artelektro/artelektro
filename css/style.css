@@ -530,8 +530,9 @@ form .formGrupa input[type="submit"]:hover {
 	width: 300px;
 }
 #slikeReference img {
-	width: 300px;
 	border-radius: 10px;
+	width: 300px;
+
 }
 #slikeReference img:hover {
 	transform: scale(2);
