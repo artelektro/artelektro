@@ -352,9 +352,12 @@ footer a:hover {
 #kMapa img {
 	width: 350px;
 	border-radius: 10px;
+	transform: scale(1);
+	transition: 1.5s;
 }
 #kMapa img:hover {
 	transform: scale(2);
+	transition: 1.5s;
 }
 #dSredina h2 {
 	text-align: center;
