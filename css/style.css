@@ -134,7 +134,6 @@ nav {
 	color: rgba(48, 50, 47, 1);
 	border-radius: 10px;
 	padding: 12px 20px;
-	
 	font-weight: 550;
 }
 .naslovna {
@@ -532,6 +531,7 @@ form .formGrupa input[type="submit"]:hover {
 }
 #slikeReference img {
 	width: 300px;
+	border-radius: 10px;
 }
 #slikeReference img:hover {
 	transform: scale(2);
