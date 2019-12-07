@@ -4,6 +4,14 @@
 	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
 }
+.naslov h1{
+	animation-name: animacija;
+	animation-duration: 2s;
+}
+@keyframes animacija {
+	from {transform: scale(0.3)};
+	to {transform: scale(1)};
+}
 .belaSlova {
 	color: #fff;
 }
@@ -21,6 +29,17 @@ a {
 	color: #fff;
 	border-radius: 10px;
 }
+.container {
+	width: 1140px;
+	margin: 0px auto;
+}
+.container-sadrzaj {
+	width: 960px;
+	margin: 0px auto;
+}
+.center-text{
+	text-align: center;
+}
 /*index*/
 	/*meni*/
 nav {
@@ -30,13 +49,12 @@ nav {
 	height: 70px;
 	background-color: #fff;
 	box-shadow: 0px 2px 0px  #c2c2c2;
+	z-index: 2;
 }
 .nav-container {
-	width: 1200px;
 	height: inherit;
 	display: flex;
 	justify-content: center;
-	margin: 0px auto;
 	position: relative;
 }
 #logo {
@@ -92,50 +110,127 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
+#naslovnaSlika div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 #naslovnaSlika h1 {
 	padding: 12px 20px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(48, 50, 47, 0.8);
+	color: #dc4c29;
 	border-radius: 10px;
 }
-#naslovnaOnama {
-	width: 50%;
-	margin: 15px auto;
+#naslovnaSlika a {
+	background-color: rgba(48, 50, 47, 0.8);
+	color: #dc4c29;
+	border-radius: 10px;
+	padding: 12px 20px;
+	font-weight: 550;
+	margin-top: 20px;
 }
-#naslovnaOnama h2 {
+#naslovnaSlika a:hover {
+	background-color: rgba(220, 76, 41, 0.9);
+	color: rgba(48, 50, 47, 1);
+	border-radius: 10px;
+	padding: 12px 20px;
+	
+	font-weight: 550;
+}
+.naslovna {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.naslovna h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 20px 0px;
 }
-#naslovnaOnama h2 p {
+.naslovna h2 {
 	color: #dc4c29;
 	font-size: 24px;
 	font-weight: 900;
 }
-#naslovnaOnama p {
+.naslovna p {
 	padding: 10px 0px;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
 }
-#naslovnaOnama p a {
+.naslovna p a {
 	font-size: 20px;
 	color: #dc4c29;
 	font-weight: 600;
 	padding: 12px 20px;
 }
-#naslovnaOnama p a:hover {
+.naslovna p a:hover {
 	background-color: #dc4c29;
 	color: #fff;
 	padding: 12px 20px;
 	border-radius: 10px;
 }
+#naslovnaPitanjeText{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+#naslovnaPitanjeBoja {
+	padding: 60px 0px;
+	background-color: rgba(48, 50, 47, 1);
+	color: rgba(220, 76, 41, 1);
+	font-size: 18px;
+}
+#naslovnaPitanjeBoja p {
+	padding: 3px 0px;
+}
+#naslovnaPitanjeBoja a {
+	color: rgba(220, 76, 41, 1);
+	padding: 3px 6px;
+}
+#naslovnaPitanjeBoja a:hover {
+	color: rgba(48, 50, 47, 1);
+	background-color: rgba(220, 76, 41, 1);
+	padding: 3px 6px;
+}
+#naslovnaSlike {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	justify-content: space-evenly;
+}
+#naslovnaSlike p {
+	text-align: center;
+}
+#naslovnaSlike article {
+	width: 360px;
+}
+#naslovnaSlike img {
+	width: 360px;
+	transition: filter 1s;
+}
+
+#naslovnaSlike img:hover {
+	filter: saturate(0%);
+}
+#odaberite h3 {
+	margin-top: 40px;
+	padding: 20px 0px;
+	font-size: 22px;
+}
+#odaberite p {
+	padding: 20px 0px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
 	/*footer*/
 footer {
 	width: 100%;
 	height: 150px;
 	background-color: #30322f;
 	color: #fff;
+	padding-bottom: 30px;
 }
 footer section {
 	display: flex;
@@ -143,12 +238,13 @@ footer section {
 	box-sizing: border-box;
 	padding-top: 18px;
 	align-items: baseline;
-	max-width: 1200px;
-	margin: 0px auto;
-	margin-bottom: 3px;
+	margin-bottom: 30px;
 }
 footer article:nth-of-type(2) {
 	width: 280px;
+}
+footer article ul li {
+	padding-top: 5px;
 }
 footer a {
 	color: #fff;
@@ -199,19 +295,23 @@ footer a:hover {
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	padding-top: 18px;
-	margin: 30px auto;
-	max-width: 1200px;
+	padding: 30px 0px;
+}
+#kratakInfo{
+	padding: 40px 0px;
+	font-weight: 550;
+	font-size: 20px;
 }
 #info {
 	display: flex;
 	flex-direction: column;
-	margin: 20px 0px;
+	margin: 30px 0px;
 }
-#info p, a {
-	margin: 3px 0px;
+#info p, #info a {
+	margin: 10px 0px;
+	font-size: 20px;
 }
-#lSredina p {
+#gSredina p {
 	height: 20px;
 	display: flex;
 }
@@ -259,7 +359,11 @@ footer a:hover {
 }
 #kontaktp {
 	display: flex;
-	justify-content: center;
+	width: inherit;
+}
+#forma {
+	width: 720px;
+	margin: 0px auto;
 }
 form label {
 	display: block;
@@ -280,6 +384,7 @@ form input, form textarea {
 	font-size: 19px;
 	outline: none;
 	border-radius: 10px;
+	padding-left: 10px;
 }
 form textarea {
 	resize: none;
@@ -291,6 +396,9 @@ form #kontaktp .formGrupa:first-of-type {
 	display: block;
 	margin-right: 40px;
 }
+.formGrupa #email, .formGrupa #tel {
+	width: 340px ;
+}
 .formGrupa #imeIPrezime, .formGrupa #tema, .formGrupa #poruka {
 	width: 100%;
 }
@@ -298,24 +406,22 @@ form #kontaktp .formGrupa:first-of-type {
 	height: 150px;
 }
 .formGrupa input, .formGrupa textarea {
-	width: 300px;
 	box-sizing: border-box;
 }
 .formGrupa #submit {
 	margin: 30px auto;
 	border-top: 2px solid #dc4c29;
 	display: block;
+	cursor: pointer;
+	padding: 2px 4px;
 }
 form .formGrupa input[type="submit"]:hover {
-	/* background-color: #30322f; */
 	color: #dc4c29;
 }
 /*politika privatnosti*/ /*uslovi koriscenja*/ /*o nama*/
 #pp, #uk, #oNama {
-	width: 900px;
 	display: flex;
 	flex-direction: column;
-	margin: 0px auto;
 }
 #pp p, #uk p, #oNama p {
 	margin-top: 25px;
@@ -349,10 +455,6 @@ form .formGrupa input[type="submit"]:hover {
 	flex-direction: column;
 }
 /*usluge*/
-#usluge{
-	width: 1200px;
-	margin: 0px auto;
-}
 #usluge h2{
 	margin-top: 60px;
 	text-align: center;
@@ -380,10 +482,6 @@ form .formGrupa input[type="submit"]:hover {
 	color: #dc4c29;
 }
 /*autor*/
-#autor{
-	width: 1200px;
-	margin: 0px auto;
-}
 #autor section{
 	margin: 20px 0px;
 	padding: 20px;
@@ -403,11 +501,14 @@ form .formGrupa input[type="submit"]:hover {
 #autor article{
 	padding: 0px 15px;
 }
-.naslov h1{
-	animation-name: animacija;
-	animation-duration: 2s;
+#slikeReference section {
+	display: flex;
+	flex-direction: column;
 }
-@keyframes animacija {
-	from {transform: scale(0.3)};
-	to {transform: scale(1)};
+#slikeReference section article section{
+	display: flex;
+	flex-direction: row;
+}
+#slikeReference img{
+	
 }

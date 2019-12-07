@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<meta charset="uft-8" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="ARTelektro vr&#353i kompletnu uslugu elektroradova na podru&#269;ju Beograda." />
 		<meta name="keywords" content="elektroinstalacije,elektroinstalacija,elektroradovi,ARTelektro,elektricar" />
@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<nav>
-			<div class="nav-container">
+			<div class="nav-container container">
 				<div id="logo">
 					<a href="index.html">
 						<img src="img/logo.png" alt="Logo" />
@@ -46,92 +46,98 @@
 			</h1>
 		</div>
 		<div>
-			<section id="kSredina">
-				<article id="lSredina">
-					<h2>
-						Direkcija
-					</h2>
-					<div id="info">
-						<div id="sLogo">
-							<a href="index.html">
-								<img src="img/sLogo.png" alt="ARTelektro logo" />
-							</a>
-							<p>
-								ARTelektro
-							</p>
-						</div>
-						<div id="map-marker-alt">
-							<p>
-								Kor&#269;aginova 18, Beograd
-							</p>
-						</div>
-						<div id="university">
-							<p>
-								Mati&#269;ni broj: 
-							</p>
-						</div>
-						<div id="info-circle">
-							<p>
-								PIB: 
-							</p>
-						</div>
-						<div id="phone">
-							<p>
-								+381 65 2078 634
-							</p>
-						</div>
-						<div id="envelope">
-							<p>
-								<label for="imeIPrezime" form="form">
-									bojan&#46;stojkovic&#46;29&#46;19&#64;ict&#46;edu&#46;rs
-								</label>
-							</p>
-						</div>
-						<div id="globe">
-							<p>
-								artelektro.rs
-							</p>
-						</div>
+			<p id="kratakInfo" class="container-sadrzaj">
+				Imate pitanje ili predlog? Kontaktirajte nas, a mi &#263;emo se potruditi da odgovorimo u najkra&#263;em mogu&#263;em roku. Rado &#263;emo Vam odgovoriti na bilo koje pitanje u vezi sa na&#353;im uslugama, radom sa klijentima, zajedni&#269;kom saradnjom ili na op&#353;ta pitanja.
+			</p>
+		</div>
+		<section id="kSredina" class="container-sadrzaj">
+			<article id="gSredina">
+				<h2>
+					Direkcija
+				</h2>
+				<div id="info">
+					<div id="sLogo">
+						<a href="index.html">
+							<img src="img/sLogo.png" alt="ARTelektro logo" />
+						</a>
+						<p>
+							ARTelektro
+						</p>
 					</div>
-					<div id="kMapa">
-						<img src="img/kontaktMapa.png" alt="mapa firme" />
+					<div id="map-marker-alt">
+						<p>
+							Kor&#269;aginova 18, Beograd
+						</p>
 					</div>
-				</article>
-				<article id="dSredina">
-					<h2>
-						Postavite pitanje
-					</h2>
-					<form action="" method="POST" id="form">
-							<div class="formGrupa">
-								<label for="imeIPrezime">Ime i prezime</label>
-								<input type="text" name="imeIPrezime" id="imeIPrezime" autofocus />
-							</div>
-						<div id="kontaktp" >
-							<div class="formGrupa">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" />
-							</div>
-							<div class="formGrupa">
-								<label for="tel">Kontakt telefon</label>
-								<input type="tel" name="tel" id="tel" />
-							</div>
-						</div>
-						<div class="formGrupa">
-							<label for="tema">Tema</label>
-							<input type="text" name="tema" id="tema" />
-						</div>
-						<div class="formGrupa">
-							<label for="poruka">Poruka</label>
-							<textarea name="poruka" id="poruka"></textarea>
-						<div class="formGrupa" id="123">
-							<input type="submit" value="Po&#353;alji poruku" id="submit" onclick="alert('Uspe&#353;no ste poslali poruku.')" />
-						</div>
-					</form>
-				</article>
-			</section>
+					<div id="university">
+						<p>
+							Mati&#269;ni broj: 65351404
+						</p>
+					</div>
+					<div id="info-circle">
+						<p>
+							PIB: 111350869
+						</p>
+					</div>
+					<div id="phone">
+						<p>
+							+381 65 2078 634
+						</p>
+					</div>
+					<div id="envelope">
+						<p>
+							<label for="imeIPrezime" form="form">
+								bojan&#46;stojkovic&#46;29&#46;19&#64;ict&#46;edu&#46;rs
+							</label>
+						</p>
+					</div>
+					<div id="globe">
+						<p>
+							artelektro.rs
+						</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div id="kMapa">
+					<img src="img/kontaktMapa.png" alt="mapa firme" />
+				</div>
+			</article>
+		</section>
+		<div id="forma">
+			<h2 class="center-text">
+				Postavite pitanje
+			</h2>
+			<form action="" method="POST" id="form">
+					<div class="formGrupa">
+						<label for="imeIPrezime">Ime i prezime</label>
+						<input type="text" name="imeIPrezime" id="imeIPrezime" autofocus />
+					</div>
+				<div id="kontaktp" >
+					<div class="formGrupa">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" />
+					</div>
+					<div class="formGrupa">
+						<label for="tel">Kontakt telefon</label>
+						<input type="tel" name="tel" id="tel" />
+					</div>
+				</div>
+				<div class="formGrupa">
+					<label for="tema">Tema</label>
+					<input type="text" name="tema" id="tema" />
+				</div>
+				<div class="formGrupa">
+					<label for="poruka">Poruka</label>
+					<textarea name="poruka" id="poruka"></textarea>
+				</div>
+				<div class="formGrupa" id="123">
+					<input type="submit" value="Po&#353;alji poruku" id="submit" onclick="alert('Uspe&#353;no ste poslali poruku.')" />
+				</div>
+			</form>
 		</div>
 		<footer>
-			<section>
+			<section class="container">
 				<article>
 					<ul>
 						<li>
